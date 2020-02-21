@@ -1,6 +1,11 @@
 require 'pry'
 
+<<<<<<< HEAD
 include Memorable::ClassMethods, Findable::ClassMethods, Paramable::InstanceMethods
+=======
+include Memorable::ClassMethods, Paramable::InstanceMethods, Findable::ClassMethods
+
+>>>>>>> 0abc3dc4dfe7430ee7b5b6ccd607313ebbb6f1ac
 class Artist
   attr_accessor :name
   attr_reader :songs
@@ -8,9 +13,13 @@ class Artist
   @@artists = []
 
   def initialize
+<<<<<<< HEAD
     #super
     @@artists << self
     @songs = []
+=======
+    save
+>>>>>>> 0abc3dc4dfe7430ee7b5b6ccd607313ebbb6f1ac
   end
 
   def self.all
